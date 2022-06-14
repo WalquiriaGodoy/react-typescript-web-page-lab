@@ -1,0 +1,15 @@
+.formulario-caixa {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario-item-caixa {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.input {
+  max-width: 30%;
+}

@@ -1,0 +1,38 @@
+header {
+  padding: 20px 0;
+}
+
+.cabecalho-logo {
+  width: 190px;
+}
+
+.caixa-transparente {
+  position: relative;
+  width: 940px;
+  margin: 10px auto;
+}
+
+.lista-navegacao {
+  display: flex;
+  position: absolute;
+  top: 110px;
+  right: 0;
+}
+
+ul li {
+  display: inline;
+  margin: 0 0 0 30px;
+}
+
+.item-lista-navegacao {
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.item-lista-navegacao:hover {
+  color: #c78c19;
+  text-decoration: underline;
+}
