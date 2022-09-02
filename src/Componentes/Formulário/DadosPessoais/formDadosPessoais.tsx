@@ -1,13 +1,12 @@
 import Botao from '../../Botao/botao';
 import './formDadosPessoais.scss';
 
-function FormDadosPessoais() {
-  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-    event.preventDefault();
-    alert('handleClick');
-    console.log('botão clicado');
-  };
+type FormProps = {
+  submitText: string;
+  handleClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
+};
 
+function FormDadosPessoais({ submitText, handleClick }: FormProps) {
   return (
     <form className='formulario'>
       <div className='formulario-caixa'>
@@ -24,7 +23,7 @@ function FormDadosPessoais() {
         </div>
 
         <div className='formulario-item-caixa'>
-          <Botao texto='Próxima' handleClick={handleClick} />
+          <Botao texto={submitText} handleClick={handleClick} />
         </div>
       </div>
     </form>

@@ -1,6 +1,12 @@
-import './formDadosPessoais.scss';
+import './formEndereco.scss';
+import Botao from '../../Botao/botao';
 
-function FormEndereco() {
+type FormProps = {
+  submitText: string;
+  handleClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
+};
+
+function FormEndereco({ submitText, handleClick }: FormProps) {
   return (
     <>
       <div className='formulario-item-caixa'>
@@ -26,7 +32,7 @@ function FormEndereco() {
       </div>
 
       <div className='formulario-item-caixa'>
-        <Botao texto={'Cadastrar'} />
+        <Botao texto={submitText} handleClick={handleClick} />
       </div>
     </>
   );
