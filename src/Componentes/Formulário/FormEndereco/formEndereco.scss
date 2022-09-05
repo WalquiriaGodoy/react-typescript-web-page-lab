@@ -1,0 +1,30 @@
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formulario-caixa {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario-item-caixa {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+label {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  width: 50vh;
+  height: 25px;
+  border-radius: 5px;
+  border-width: 1px;
+}
