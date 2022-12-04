@@ -15,19 +15,11 @@ class Cabecalho extends React.Component {
               <LinkButton texto='HOME' path='/' />
             </li>
             <li>
-              <Link className='item-lista-navegacao' to='/'>
-                Home
-              </Link>
+              <li></li>
+              <LinkButton texto='Cadastro' path='/cadastro' />
             </li>
             <li>
-              <Link className='item-lista-navegacao' to='/cadastro'>
-                Cadastro
-              </Link>
-            </li>
-            <li>
-              <Link className='item-lista-navegacao' to='/cursos'>
-                Cursos
-              </Link>
+              <LinkButton texto='Cursos' path='/cursos' />
             </li>
           </ul>
         </div>

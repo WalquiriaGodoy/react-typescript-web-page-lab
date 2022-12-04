@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 const LargeButton = styled(Button)({
   backgroundColor: '#B13737',
+  borderRadius: '10px',
 }) as typeof Button;
 
 type BotaoProps = {
@@ -26,7 +27,7 @@ type LinkButtonProps = {
 
 export function LinkButton({ texto, path }: LinkButtonProps) {
   return (
-    <Link className='item-lista-navegacao' to={path}>
+    <Link to={path}>
       <LargeButton>{texto}</LargeButton>
     </Link>
   );
