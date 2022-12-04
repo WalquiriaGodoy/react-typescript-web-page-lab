@@ -20,9 +20,9 @@ function Cadastro() {
   };
 
   //Quebrando a aplicação
-  useEffect(() => {
-    console.log('quebrando a aplicação');
-  }, [handleClick]);
+  // useEffect(() => {
+  //   console.log('quebrando a aplicação');
+  // }, [handleClick]);
 
   return (
     <section className='conteudo'>
