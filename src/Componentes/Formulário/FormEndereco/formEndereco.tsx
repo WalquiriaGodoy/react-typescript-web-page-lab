@@ -1,5 +1,5 @@
 import './formEndereco.scss';
-import Botao from '../../Botao/botao';
+import { FormButton } from '../../MaterialUI/button';
 
 type FormProps = {
   id: number;
@@ -35,7 +35,7 @@ function FormEndereco({ submitText, handleClick }: FormProps) {
         </div>
 
         <div className='formulario-item-caixa'>
-          <Botao texto={submitText} handleClick={handleClick} />
+          <FormButton texto={submitText} handleClick={handleClick} />
         </div>
       </form>
     </>
