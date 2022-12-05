@@ -2,6 +2,12 @@ import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
 
+const SmallButton = styled(Button)({
+  backgroundColor: '#B13737',
+  borderRadius: '10px',
+  width: '100px',
+}) as typeof Button;
+
 const LargeButton = styled(Button)({
   backgroundColor: '#B13737',
   borderRadius: '10px',
@@ -14,7 +20,12 @@ type BotaoProps = {
 
 export function FormButton({ texto, handleClick }: BotaoProps) {
   return (
-    <LargeButton variant='contained' onClick={handleClick} className='botao'>
+    <LargeButton
+      variant='contained'
+      onClick={handleClick}
+      className='botao'
+      disableElevation
+    >
       {texto}
     </LargeButton>
   );
@@ -27,8 +38,8 @@ type LinkButtonProps = {
 
 export function LinkButton({ texto, path }: LinkButtonProps) {
   return (
-    <Link to={path}>
-      <LargeButton>{texto}</LargeButton>
+    <Link to={path} style={{ textDecoration: 'none' }}>
+      <SmallButton variant='contained'>{texto}</SmallButton>
     </Link>
   );
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { LinkButton } from '../MaterialUI/button';
 import logolab2 from './../../assets/img/logolab2.png';
 import './cabecalho.scss';
@@ -15,7 +14,6 @@ class Cabecalho extends React.Component {
               <LinkButton texto='HOME' path='/' />
             </li>
             <li>
-              <li></li>
               <LinkButton texto='Cadastro' path='/cadastro' />
             </li>
             <li>
