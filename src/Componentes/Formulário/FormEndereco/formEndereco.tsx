@@ -1,5 +1,5 @@
 import './formEndereco.scss';
-import { FormButton } from '../../MaterialUI/button';
+import { FormButton } from '../../MaterialUI/Buttons/button';
 
 type FormProps = {
   id: number;

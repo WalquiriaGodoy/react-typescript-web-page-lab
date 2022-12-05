@@ -11,30 +11,33 @@ const SmallButton = styled(Button)({
 const LargeButton = styled(Button)({
   backgroundColor: '#B13737',
   borderRadius: '10px',
+  width: '50vh',
+  height: '30px',
+  marginTop: '20px',
 }) as typeof Button;
 
-type BotaoProps = {
+type FormButtonProps = {
   texto: string;
   handleClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
 };
 
-export function FormButton({ texto, handleClick }: BotaoProps) {
+type LinkButtonProps = {
+  texto: string;
+  path: string;
+};
+
+export function FormButton({ texto, handleClick }: FormButtonProps) {
   return (
     <LargeButton
+      color='secondary'
       variant='contained'
       onClick={handleClick}
-      className='botao'
       disableElevation
     >
       {texto}
     </LargeButton>
   );
 }
-
-type LinkButtonProps = {
-  texto: string;
-  path: string;
-};
 
 export function LinkButton({ texto, path }: LinkButtonProps) {
   return (

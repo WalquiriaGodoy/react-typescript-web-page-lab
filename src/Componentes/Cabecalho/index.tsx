@@ -1,5 +1,5 @@
 import React from 'react';
-import { LinkButton } from '../MaterialUI/button';
+import { LinkButton } from '../MaterialUI/Buttons/button';
 import logolab2 from './../../assets/img/logolab2.png';
 import './cabecalho.scss';
 

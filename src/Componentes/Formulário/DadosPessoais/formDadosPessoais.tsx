@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
-import Botao from '../../Botao/botao';
 import './formDadosPessoais.scss';
+import { FormButton } from '../../MaterialUI/Buttons/button';
+import { ThemeProvider } from '@mui/material/styles';
+import { labTheme } from '../../MaterialUI/Theme/colorTheme';
 
 type FormProps = {
   id: number;
@@ -47,7 +49,9 @@ function FormDadosPessoais({ id, form, submitText, handleClick }: FormProps) {
         </div>
 
         <div className='formulario-item-caixa'>
-          <Botao texto={submitText} handleClick={handleClick} />
+          <ThemeProvider theme={labTheme}>
+            <FormButton texto={submitText} handleClick={handleClick} />
+          </ThemeProvider>
         </div>
       </div>
     </form>
