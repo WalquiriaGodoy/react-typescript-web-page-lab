@@ -19,11 +19,6 @@ function Cadastro() {
     setForm(form + 1);
   };
 
-  //Quebrando a aplicação
-  // useEffect(() => {
-  //   console.log('quebrando a aplicação');
-  // }, [handleClick]);
-
   return (
     <section className='conteudo'>
       <Cabecalho />
