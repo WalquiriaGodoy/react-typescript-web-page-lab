@@ -1,7 +1,13 @@
 import { FormButton } from '../../MaterialUI/Buttons/button';
 import { ThemeProvider } from '@mui/material/styles';
 import { labTheme } from '../../MaterialUI/Theme/colorTheme';
-import { LabelContainer, FormContainer, InputContainer } from './styles';
+import {
+  LabelContainer,
+  FormContainer,
+  InputContainer,
+  ButtonContainer,
+  ItenContainer,
+} from './styles';
 
 type FormProps = {
   submitText: string;
@@ -10,14 +16,20 @@ type FormProps = {
 function FormMatricula({ submitText }: FormProps) {
   return (
     <FormContainer>
-      <LabelContainer>Nome</LabelContainer>
-      <InputContainer />
+      <ItenContainer>
+        <LabelContainer>Nome</LabelContainer>
+        <InputContainer />
+      </ItenContainer>
+      <ItenContainer>
+        <LabelContainer>Telefone</LabelContainer>
+        <InputContainer />
+      </ItenContainer>
 
-      <div className='formulario-item-caixa'>
+      <ButtonContainer>
         <ThemeProvider theme={labTheme}>
           <FormButton texto={submitText} />
         </ThemeProvider>
-      </div>
+      </ButtonContainer>
     </FormContainer>
   );
 }
