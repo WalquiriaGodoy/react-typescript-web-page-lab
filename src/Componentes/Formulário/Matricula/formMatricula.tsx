@@ -27,7 +27,7 @@ function FormMatricula({ submitText }: FormProps) {
 
       <ButtonContainer>
         <ThemeProvider theme={labTheme}>
-          <FormButton texto={submitText} />
+          <FormButton text={submitText} />
         </ThemeProvider>
       </ButtonContainer>
     </FormContainer>

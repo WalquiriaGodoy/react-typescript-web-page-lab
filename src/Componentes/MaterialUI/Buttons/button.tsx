@@ -17,7 +17,7 @@ const LargeButton = styled(Button)({
 }) as typeof Button;
 
 type FormButtonProps = {
-  texto: string;
+  text?: string;
   handleClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
 };
 
@@ -26,7 +26,7 @@ type LinkButtonProps = {
   path: string;
 };
 
-export function FormButton({ texto, handleClick }: FormButtonProps) {
+export function FormButton({ text, handleClick }: FormButtonProps) {
   return (
     <LargeButton
       color='secondary'
@@ -34,7 +34,7 @@ export function FormButton({ texto, handleClick }: FormButtonProps) {
       onClick={handleClick}
       disableElevation
     >
-      {texto}
+      {text}
     </LargeButton>
   );
 }

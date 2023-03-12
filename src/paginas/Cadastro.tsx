@@ -1,8 +1,7 @@
 import Cabecalho from './../Componentes/Cabecalho';
 import Rodape from '../Componentes/Rodape';
-import FormDadosPessoais from '../Componentes/Formulário/DadosPessoais/formDadosPessoais';
-import FormEndereco from '../Componentes/Formulário/FormEndereco/formEndereco';
-import { useEffect, useState } from 'react';
+import RegisterForm from './../Componentes/Formulário/Cadastro';
+import { useState } from 'react';
 
 function Cadastro() {
   const formularios = {
@@ -22,18 +21,7 @@ function Cadastro() {
   return (
     <section className='conteudo'>
       <Cabecalho />
-      <FormDadosPessoais
-        id={0}
-        form={form}
-        submitText='próximo'
-        handleClick={handleClick}
-      />
-      <FormEndereco
-        id={1}
-        form={form}
-        submitText='cadastrar'
-        handleClick={handleClick}
-      />
+      <RegisterForm />
       <Rodape />
     </section>
   );
