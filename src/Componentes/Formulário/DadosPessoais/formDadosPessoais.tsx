@@ -8,18 +8,24 @@ function FormDadosPessoais() {
         <input className='input' type='text' name='name' id='name' required />
       </div>
       <div className='formulario-item-caixa'>
-        <label htmlFor='telephone'>Telefone</label>
+        <label htmlFor='phone'>Telefone</label>
         <input
           className='input'
           type='number'
-          name='telephone'
+          name='phone'
           id='telephone'
           required
         />
       </div>
       <div className='formulario-item-caixa'>
         <label htmlFor='name'>Data de Nascimento</label>
-        <input className='input' type='date' name='date' id='date' required />
+        <input
+          className='input'
+          type='date'
+          name='birthDate'
+          id='date'
+          required
+        />
       </div>
     </>
   );
