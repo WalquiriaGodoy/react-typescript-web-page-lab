@@ -31,7 +31,7 @@ export function FormButton({ text, handleClick }: FormButtonProps) {
     <LargeButton
       color='secondary'
       variant='contained'
-      onClick={handleClick}
+      type='submit'
       disableElevation
     >
       {text}
