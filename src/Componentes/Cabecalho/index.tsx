@@ -1,14 +1,15 @@
 import React from 'react';
 import { LinkButton } from '../MaterialUI/Buttons/button';
-import logolab2 from './../../assets/img/logolab2.png';
+import * as S from './header.style';
+
 import './cabecalho.scss';
 
 class Cabecalho extends React.Component {
   render() {
     return (
       <header>
-        <div className='caixa-transparente'>
-          <img className='cabecalho-logo' src={logolab2} />
+        <S.HeaderWrapper>
+          <S.HeaderTitle>Laboratório de Forró</S.HeaderTitle>
           <ul className='lista-navegacao'>
             <li>
               <LinkButton texto='HOME' path='/' />
@@ -20,7 +21,7 @@ class Cabecalho extends React.Component {
               <LinkButton texto='Cursos' path='/cursos' />
             </li>
           </ul>
-        </div>
+        </S.HeaderWrapper>
       </header>
     );
   }
