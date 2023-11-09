@@ -9,7 +9,11 @@ class Sobre extends React.Component {
         <h1 className='titulo-principal'>
           Sobre o Laboratório de Forró da Wal
         </h1>
-        <img className='img-sobre' src={salaolab} />
+        <img
+          className='img-sobre'
+          src={salaolab}
+          alt='Imagem da sala de aula com alunos em circulo'
+        />
         <p className='paragrafo'>
           Localizado em São Paulo, na região do Butantã, o Laboratório de Forró
           traz para o mercado da dança de salão, os cursos de Forró e Samba de
