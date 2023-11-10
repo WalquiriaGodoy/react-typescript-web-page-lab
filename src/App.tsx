@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/Fonts';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './paginas/Home';
+import Home from './paginas/Home/Home';
 import Cursos from './paginas/Cursos';
 import 'normalize.css';
 import Matricula from './paginas/Matricula';
