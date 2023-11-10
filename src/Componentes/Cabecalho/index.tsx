@@ -3,6 +3,7 @@ import { LinkButton } from '../MaterialUI/Buttons/button';
 import * as S from './header.style';
 
 import './cabecalho.scss';
+import { BannerLab } from '../../assets/images/BannerLab';
 
 class Cabecalho extends React.Component {
   render() {
@@ -22,6 +23,9 @@ class Cabecalho extends React.Component {
             </li>
           </ul>
         </S.HeaderWrapper>
+        <S.BannerWrapper>
+          <BannerLab />
+        </S.BannerWrapper>
       </header>
     );
   }

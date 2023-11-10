@@ -12,3 +12,15 @@ export const HeaderTitle = styled.div`
   font-size: 2rem;
   width: 50%;
 `;
+
+export const BannerWrapper = styled.div`
+  width: 100%;
+  height: 500px;
+  display: flex;
+  overflow-y: hidden;
+
+  img {
+    width: 100%;
+    height: fit-content;
+  }
+`;
