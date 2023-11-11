@@ -1,6 +1,7 @@
 import React from 'react';
 import * as S from './sobre.style';
 import salaolab from '../../assets/img/salaolab.jpeg';
+import CarouselRatio from '../CoursesCarousel/CoursesCarousel';
 
 class Sobre extends React.Component {
   render() {
@@ -23,6 +24,7 @@ class Sobre extends React.Component {
             mental.
           </p>
         </S.Text>
+        <CarouselRatio />
       </S.MainContentWrapper>
     );
   }
