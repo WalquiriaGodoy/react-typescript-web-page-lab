@@ -2,13 +2,8 @@ import React from 'react';
 import * as S from './sobre.style';
 import salaolab from '../../assets/img/jpegImages/salaolab.jpeg';
 import { Carousel } from '../Carousel/Carousel';
-import { IntroducaoAoForro } from '../../assets/images/IntroduçãoAoForro';
-import { GirosTradicionais } from '../../assets/images/GirosTradicionais';
-import { GirosDeCincoPisadas } from '../../assets/images//GirosDeCincoPisadas';
-import { CaminhadasDoRoots } from '../../assets/images/CaminhadasDoRoots';
-import { GirosDoRoots } from '../../assets/images/GirosDoRoots';
-import { PushAndPullESacadas } from '../../assets/images/PushAndPullESacadas';
-import { ArrastadasETrocadilhos } from '../../assets/images/ArrastadasETrocadilhos';
+import { CourseCard } from '../CourseCard/CourseCard';
+import { CoursesList } from '../Courses/CoursesList';
 
 class Sobre extends React.Component {
   render() {
@@ -36,13 +31,17 @@ class Sobre extends React.Component {
 
         <S.Courses>
           <Carousel>
-            <IntroducaoAoForro />
-            <GirosTradicionais />
-            <GirosDeCincoPisadas />
-            <CaminhadasDoRoots />
-            <GirosDoRoots />
-            <PushAndPullESacadas />
-            <ArrastadasETrocadilhos />
+            {CoursesList.map((course) => {
+              return (
+                <CourseCard
+                  name={course.name}
+                  children={course.children}
+                  textAlign={course.textAlign}
+                  textTop={course.textTop}
+                  textRigth={course.textRigth}
+                />
+              );
+            })}
           </Carousel>
         </S.Courses>
       </S.MainContentWrapper>

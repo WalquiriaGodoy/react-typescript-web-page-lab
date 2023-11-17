@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import RobotoFont from './Fonts';
+import { RobotoFont } from './Fonts';
 
 const GlobalStyle = createGlobalStyle`
   ${RobotoFont}
