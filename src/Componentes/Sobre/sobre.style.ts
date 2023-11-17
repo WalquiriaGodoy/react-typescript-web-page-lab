@@ -2,13 +2,13 @@ import styled from 'styled-components';
 
 export const MainContentWrapper = styled.div`
   background: #fefefe;
-  margin: 8rem;
+  margin: 3rem 8rem;
 
   h1 {
     text-align: center;
     font-size: 2.5em;
     font-family: 'Roboto';
-    margin: 0 0 1em;
+    margin: 5rem;
     clear: left;
   }
 

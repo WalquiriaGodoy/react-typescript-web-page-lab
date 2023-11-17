@@ -32,6 +32,8 @@ class Sobre extends React.Component {
           </p>
         </S.Text>
 
+        <h1 className='titulo-principal'>Cursos Oferecidos</h1>
+
         <S.Courses>
           <Carousel>
             <IntroducaoAoForro />

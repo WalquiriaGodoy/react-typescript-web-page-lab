@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  padding: 10rem 0;
   width: 100%;
   height: 300px;
   overflow-x: scroll;
