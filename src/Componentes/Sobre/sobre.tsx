@@ -1,7 +1,14 @@
 import React from 'react';
 import * as S from './sobre.style';
-import salaolab from '../../assets/img/salaolab.jpeg';
-import CarouselRatio from '../CoursesCarousel/CoursesCarousel';
+import salaolab from '../../assets/img/jpegImages/salaolab.jpeg';
+import { Carousel } from '../Carousel/Carousel';
+import { IntroducaoAoForro } from '../../assets/images/IntroduçãoAoForro';
+import { GirosTradicionais } from '../../assets/images/GirosTradicionais';
+import { GirosDeCincoPisadas } from '../../assets/images//GirosDeCincoPisadas';
+import { CaminhadasDoRoots } from '../../assets/images/CaminhadasDoRoots';
+import { GirosDoRoots } from '../../assets/images/GirosDoRoots';
+import { PushAndPullESacadas } from '../../assets/images/PushAndPullESacadas';
+import { ArrastadasETrocadilhos } from '../../assets/images/ArrastadasETrocadilhos';
 
 class Sobre extends React.Component {
   render() {
@@ -24,7 +31,18 @@ class Sobre extends React.Component {
             mental.
           </p>
         </S.Text>
-        <CarouselRatio />
+
+        <S.Courses>
+          <Carousel>
+            <IntroducaoAoForro />
+            <GirosTradicionais />
+            <GirosDeCincoPisadas />
+            <CaminhadasDoRoots />
+            <GirosDoRoots />
+            <PushAndPullESacadas />
+            <ArrastadasETrocadilhos />
+          </Carousel>
+        </S.Courses>
       </S.MainContentWrapper>
     );
   }
