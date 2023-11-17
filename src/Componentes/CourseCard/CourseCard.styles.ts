@@ -11,10 +11,22 @@ export const CardWrapper = styled.div`
   position: relative;
   width: 100%;
   height: 100%;
+  opacity: 0.7;
+  border-radius: 20px;
+
+  cursor: pointer;
+  & :hover {
+    transform: scale(1.05);
+  }
+
+  img {
+    border-radius: 20px;
+  }
 `;
 
 export const Image = styled.div`
   width: 300px;
+  border-radius: 10px;
 `;
 
 export const Title = styled.div<TilteProps>`
