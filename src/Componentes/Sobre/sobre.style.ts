@@ -33,3 +33,9 @@ export const Text = styled.div`
   p {
   }
 `;
+
+export const Courses = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
