@@ -3,15 +3,13 @@ import * as S from './sobre.style';
 import salaolab from '../../assets/img/jpegImages/salaolab.jpeg';
 import { Carousel } from '../Carousel/Carousel';
 import { CourseCard } from '../CourseCard/CourseCard';
-import { CoursesList } from '../Courses/CoursesList';
+import { CoursesListDuplicated } from '../Courses/CoursesList';
 
 class Sobre extends React.Component {
   render() {
     return (
       <S.MainContentWrapper>
-        <h1 className='titulo-principal'>
-          Sobre o Laboratório de Forró da Wal
-        </h1>
+        <h1 className='titulo-principal'>Sobre o Laboratório de Forró</h1>
         <S.Text>
           <img
             className='img-sobre'
@@ -31,9 +29,10 @@ class Sobre extends React.Component {
 
         <S.Courses>
           <Carousel>
-            {CoursesList.map((course) => {
+            {CoursesListDuplicated.map((course) => {
               return (
                 <CourseCard
+                  key={course.name}
                   name={course.name}
                   children={course.children}
                   textAlign={course.textAlign}

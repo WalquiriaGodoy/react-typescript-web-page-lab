@@ -16,7 +16,7 @@ export const CardWrapper = styled.div`
 
   cursor: pointer;
   & :hover {
-    transform: scale(1.05);
+    transform: scale(1.005);
   }
 
   img {
@@ -25,7 +25,7 @@ export const CardWrapper = styled.div`
 `;
 
 export const Image = styled.div`
-  width: 300px;
+  width: 400px;
   border-radius: 10px;
 `;
 
