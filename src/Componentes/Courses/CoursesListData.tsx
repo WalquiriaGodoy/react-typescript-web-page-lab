@@ -6,7 +6,7 @@ import { GirosDoRoots } from '../../assets/images/GirosDoRoots';
 import { PushAndPullESacadas } from '../../assets/images/PushAndPullESacadas';
 import { ArrastadasETrocadilhos } from '../../assets/images/ArrastadasETrocadilhos';
 
-export const CoursesList = [
+export const CoursesListData = [
   {
     name: 'Introdução ao Forró',
     textAlign: 'right',

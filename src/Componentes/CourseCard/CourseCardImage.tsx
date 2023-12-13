@@ -9,7 +9,7 @@ type CourseCardProps = {
   textRigth: string;
 };
 
-export const CourseCard = (props: CourseCardProps) => {
+export const CourseCardImage = (props: CourseCardProps) => {
   return (
     <S.CardWrapper>
       <S.Image>{props.children}</S.Image>

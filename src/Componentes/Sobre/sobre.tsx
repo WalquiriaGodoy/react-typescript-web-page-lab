@@ -2,8 +2,8 @@ import React from 'react';
 import * as S from './sobre.style';
 import salaolab from '../../assets/img/jpegImages/salaolab.jpeg';
 import { Carousel } from '../Carousel/Carousel';
-import { CourseCard } from '../CourseCard/CourseCard';
-import { CoursesListDuplicated } from '../Courses/CoursesList';
+import { CourseCardImage } from '../CourseCard/CourseCardImage';
+import { CoursesListDuplicated } from '../Courses/CoursesListData';
 
 class Sobre extends React.Component {
   render() {
@@ -31,7 +31,7 @@ class Sobre extends React.Component {
           <Carousel>
             {CoursesListDuplicated.map((course) => {
               return (
-                <CourseCard
+                <CourseCardImage
                   key={course.name}
                   name={course.name}
                   children={course.children}
