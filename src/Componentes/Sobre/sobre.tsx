@@ -3,7 +3,7 @@ import * as S from './sobre.style';
 import salaolab from '../../assets/img/jpegImages/salaolab.jpeg';
 import { Carousel } from '../Carousel/Carousel';
 import { CourseCard } from '../CourseCard/CourseCard';
-import { CoursesListDuplicated } from '../Courses/CoursesList';
+import { coursesListDuplicated } from '../Courses/CoursesList';
 
 class Sobre extends React.Component {
   render() {
@@ -29,7 +29,7 @@ class Sobre extends React.Component {
 
         <S.Courses>
           <Carousel>
-            {CoursesListDuplicated.map((course) => {
+            {coursesListDuplicated.map((course) => {
               return (
                 <CourseCard
                   key={course.name}
