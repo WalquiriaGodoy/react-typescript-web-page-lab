@@ -1,18 +1,23 @@
 import React from 'react';
-import { CursoContainter } from './styles';
+import * as S from './styles';
+import { coursesList } from '../../Courses/CoursesList';
+import { CourseCard } from '../../CourseCard/CourseCard';
 
-interface CursoProps {
-  nome: string;
-  nivel: string;
-  preco: string;
-}
+interface CursoProps {}
 
-export const Curso: React.FC<CursoProps> = ({ nome, nivel, preco }) => {
+export const Curso: React.FC<CursoProps> = () => {
   return (
-    <CursoContainter>
-      <div>{nome}</div>
-      <div>{nome}</div>
-      <div>{nivel}</div>
-    </CursoContainter>
+    <>
+      {coursesList.map((course) => {
+        return (
+          <S.CursoContainter>
+            <>TITULO</>
+            <S.ImageContainer>
+              <CourseCard key={course.name} children={course.children} />
+            </S.ImageContainer>
+          </S.CursoContainter>
+        );
+      })}{' '}
+    </>
   );
 };

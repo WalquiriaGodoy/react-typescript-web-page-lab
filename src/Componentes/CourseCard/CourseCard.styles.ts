@@ -1,9 +1,9 @@
 import styled, { css } from 'styled-components';
 
 type TilteProps = {
-  $textAlign: string;
-  $top: string;
-  $rigth: string;
+  $textAlign?: string;
+  $top?: string;
+  $rigth?: string;
 };
 
 export const CardWrapper = styled.div`

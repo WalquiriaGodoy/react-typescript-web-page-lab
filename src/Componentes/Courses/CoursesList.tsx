@@ -5,60 +5,67 @@ import { CaminhadasDoRoots } from '../../assets/images/CaminhadasDoRoots';
 import { GirosDoRoots } from '../../assets/images/GirosDoRoots';
 import { PushAndPullESacadas } from '../../assets/images/PushAndPullESacadas';
 import { ArrastadasETrocadilhos } from '../../assets/images/ArrastadasETrocadilhos';
+import { GirosTradicionaisNamedImage } from '../../assets/namedImages/GirosTradicionaisNamedImage';
+import { GirosDeCincoPisadasNamedImage } from '../../assets/namedImages/GirosDeCincoPisadasNamedImage';
+import { IntroducaoAoForroNamedImage } from '../../assets/namedImages/IntroduçãoAoForroNamedImage';
+import { CaminhadasDoRootsNamedImage } from '../../assets/namedImages/CaminhadasDoRootsNamedImage';
+import { GirosDoRootsNamedImage } from '../../assets/namedImages/GirosDoRootsNamedImage';
+import { PushAndPullESacadasNamedImage } from '../../assets/namedImages/PushAndPullESacadasNamedImage';
+import { ArrastadasETrocadilhosNamedImage } from '../../assets/namedImages/ArrastadasETrocadilhosNamedImage';
 
-export const CoursesList = [
+export const coursesList = [
   {
     name: 'Introdução ao Forró',
     textAlign: 'right',
-    children: <IntroducaoAoForro />,
+    children: <IntroducaoAoForroNamedImage />,
     textTop: `20px`,
     textRigth: `20px`,
   },
   {
     name: 'Giros Tradicionais',
     textAlign: 'center',
-    children: <GirosTradicionais />,
+    children: <GirosTradicionaisNamedImage />,
     textTop: `180px`,
     textRigth: `0`,
   },
   {
     name: 'Giros de Cinco Pisadas',
     textAlign: 'right',
-    children: <GirosDeCincoPisadas />,
+    children: <GirosDeCincoPisadasNamedImage />,
     textTop: `180px`,
     textRigth: `20px`,
   },
   {
     name: 'Caminhadas do Roots',
     textAlign: 'right',
-    children: <CaminhadasDoRoots />,
+    children: <CaminhadasDoRootsNamedImage />,
     textTop: `20px`,
     textRigth: `20px`,
   },
   {
     name: 'Giros do Roots',
     textAlign: 'center',
-    children: <GirosDoRoots />,
+    children: <GirosDoRootsNamedImage />,
     textTop: `230px`,
     textRigth: `20px`,
   },
   {
     name: 'Push & Pull e Sacadas',
     textAlign: 'right',
-    children: <PushAndPullESacadas />,
+    children: <PushAndPullESacadasNamedImage />,
     textTop: `20px`,
     textRigth: `20px`,
   },
   {
     name: 'Arrastadas e Trocadilhos',
     textAlign: 'right',
-    children: <ArrastadasETrocadilhos />,
+    children: <ArrastadasETrocadilhosNamedImage />,
     textTop: `200px`,
     textRigth: `20px`,
   },
 ];
 
-export const CoursesListDuplicated = [
+export const coursesListDuplicated = [
   {
     name: 'Introdução ao Forró',
     textAlign: 'right',

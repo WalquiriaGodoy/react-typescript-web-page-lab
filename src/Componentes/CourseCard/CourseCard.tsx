@@ -2,11 +2,11 @@ import { ReactNode } from 'react';
 import * as S from './CourseCard.styles';
 
 type CourseCardProps = {
-  name: string;
+  name?: string;
   children: ReactNode;
-  textAlign: string;
-  textTop: string;
-  textRigth: string;
+  textAlign?: string;
+  textTop?: string;
+  textRigth?: string;
 };
 
 export const CourseCard = (props: CourseCardProps) => {
