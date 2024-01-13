@@ -4,7 +4,6 @@ import salaolab from '../../assets/img/jpegImages/salaolab.jpeg';
 import { Carousel } from '../Carousel/Carousel';
 import { CourseCard } from '../CourseCard/CourseCard';
 import { coursesListDuplicated } from '../Courses/CoursesList';
-
 class Sobre extends React.Component {
   render() {
     return (
@@ -24,9 +23,8 @@ class Sobre extends React.Component {
             mental.
           </p>
         </S.Text>
-
         <h1 className='titulo-principal'>Cursos Oferecidos</h1>
-
+        {/* TODO: Refatorar componente removendo props de texto e passando no children o componente com imagem já nomeada. */}
         <S.Courses>
           <Carousel>
             {coursesListDuplicated.map((course) => {
