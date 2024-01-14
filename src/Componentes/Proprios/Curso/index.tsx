@@ -10,10 +10,13 @@ export const Curso: React.FC<CursoProps> = () => {
     <>
       {coursesList.map((course) => {
         return (
-          <S.CursoContainter>
+          <S.CursoContainter key={course.name}>
             <>TITULO</>
             <S.ImageContainer>
-              <CourseCard key={course.name} children={course.children} />
+              <CourseCard
+                key={'Curso' + course.name}
+                children={course.children}
+              />
             </S.ImageContainer>
           </S.CursoContainter>
         );

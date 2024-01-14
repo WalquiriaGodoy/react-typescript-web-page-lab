@@ -4,11 +4,13 @@ import salaolab from '../../assets/img/jpegImages/salaolab.jpeg';
 import { Carousel } from '../Carousel/Carousel';
 import { CourseCard } from '../CourseCard/CourseCard';
 import { coursesListDuplicated } from '../Courses/CoursesList';
+import { LeadInvite } from '../LeadInvite/LeadInvite';
+import { LeadForm } from '../Formulário/LeadForm/LeadForm';
 class Sobre extends React.Component {
   render() {
     return (
       <S.MainContentWrapper>
-        <h1 className='titulo-principal'>Sobre o Laboratório de Forró</h1>
+        <S.SectionTitle>Sobre o Laboratório de Forró</S.SectionTitle>
         <S.Text>
           <img
             className='img-sobre'
@@ -23,24 +25,31 @@ class Sobre extends React.Component {
             mental.
           </p>
         </S.Text>
-        <h1 className='titulo-principal'>Cursos Oferecidos</h1>
         {/* TODO: Refatorar componente removendo props de texto e passando no children o componente com imagem já nomeada. */}
-        <S.Courses>
-          <Carousel>
-            {coursesListDuplicated.map((course) => {
-              return (
-                <CourseCard
-                  key={course.name}
-                  name={course.name}
-                  children={course.children}
-                  textAlign={course.textAlign}
-                  textTop={course.textTop}
-                  textRigth={course.textRigth}
-                />
-              );
-            })}
-          </Carousel>
-        </S.Courses>
+        <S.CoursesSection>
+          <S.SectionTitle>Cursos Oferecidos</S.SectionTitle>
+          <S.Courses>
+            <Carousel>
+              {coursesListDuplicated.map((course) => {
+                return (
+                  <CourseCard
+                    key={course.name}
+                    name={course.name}
+                    children={course.children}
+                    textAlign={course.textAlign}
+                    textTop={course.textTop}
+                    textRigth={course.textRigth}
+                  />
+                );
+              })}
+            </Carousel>
+          </S.Courses>
+        </S.CoursesSection>
+
+        <S.LeadSection>
+          <LeadInvite />
+          <LeadForm />
+        </S.LeadSection>
       </S.MainContentWrapper>
     );
   }
