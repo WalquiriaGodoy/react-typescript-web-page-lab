@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const LeadFormContainer = styled.div`
+export const LeadFormContainer = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;

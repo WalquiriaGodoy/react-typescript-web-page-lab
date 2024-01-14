@@ -19,7 +19,6 @@ const LargeButton = styled(Button)({
 
 type FormButtonProps = {
   text?: string;
-  handleClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
 };
 
 type LinkButtonProps = {
@@ -27,12 +26,12 @@ type LinkButtonProps = {
   path: string;
 };
 
-export function FormButton({ text, handleClick }: FormButtonProps) {
+export function FormButton({ text }: FormButtonProps) {
   return (
     <LargeButton
+      type='submit'
       color='primary'
       variant='contained'
-      onClick={handleClick}
       disableElevation
     >
       {text}
