@@ -6,7 +6,7 @@ export const LeadInvite = () => {
       <S.InviteText>
         Não importa se você é um iniciante ou já possui algum conhecimento,
         nossas aulas são acessíveis a todos os níveis. Venha se juntar a nó e
-        descubra o prazer de se mover ao som do Forró
+        descubra o prazer de se mover ao som do Forró!
       </S.InviteText>
     </S.LeadInviteContainer>
   );

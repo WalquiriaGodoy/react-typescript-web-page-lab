@@ -10,9 +10,10 @@ const SmallButton = styled(Button)({
 
 const LargeButton = styled(Button)({
   backgroundColor: '#B13737',
+  color: 'white',
   borderRadius: '10px',
   width: '100%',
-  height: '30px',
+  height: '100%',
   marginTop: '20px',
 }) as typeof Button;
 
@@ -29,7 +30,7 @@ type LinkButtonProps = {
 export function FormButton({ text, handleClick }: FormButtonProps) {
   return (
     <LargeButton
-      color='secondary'
+      color='primary'
       variant='contained'
       onClick={handleClick}
       disableElevation
@@ -42,7 +43,9 @@ export function FormButton({ text, handleClick }: FormButtonProps) {
 export function LinkButton({ texto, path }: LinkButtonProps) {
   return (
     <Link to={path} style={{ textDecoration: 'none' }}>
-      <SmallButton variant='contained'>{texto}</SmallButton>
+      <SmallButton color='primary' variant='contained'>
+        {texto}
+      </SmallButton>
     </Link>
   );
 }
