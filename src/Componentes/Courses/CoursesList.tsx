@@ -1,10 +1,3 @@
-import { IntroducaoAoForro } from '../../assets/images/IntroduçãoAoForro';
-import { GirosTradicionais } from '../../assets/images/GirosTradicionais';
-import { GirosDeCincoPisadas } from '../../assets/images/GirosDeCincoPisadas';
-import { CaminhadasDoRoots } from '../../assets/images/CaminhadasDoRoots';
-import { GirosDoRoots } from '../../assets/images/GirosDoRoots';
-import { PushAndPullESacadas } from '../../assets/images/PushAndPullESacadas';
-import { ArrastadasETrocadilhos } from '../../assets/images/ArrastadasETrocadilhos';
 import { GirosTradicionaisNamedImage } from '../../assets/namedImages/GirosTradicionaisNamedImage';
 import { GirosDeCincoPisadasNamedImage } from '../../assets/namedImages/GirosDeCincoPisadasNamedImage';
 import { IntroducaoAoForroNamedImage } from '../../assets/namedImages/IntroduçãoAoForroNamedImage';

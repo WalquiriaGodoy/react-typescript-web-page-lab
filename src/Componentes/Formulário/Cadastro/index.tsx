@@ -19,7 +19,7 @@ const RegisterForm = ({ submitText, handleClick }: FormProps) => {
         <FormDadosPessoais />
         <FormEndereco />
         <S.ButtonContainer>
-          <FormButton text='Finalizar Cadastro' handleClick={handleClick} />
+          <FormButton text='Finalizar Cadastro' />
         </S.ButtonContainer>
       </form>
     </S.FormContainer>

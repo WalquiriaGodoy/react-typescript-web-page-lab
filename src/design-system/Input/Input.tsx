@@ -1,18 +1,17 @@
+import { FieldValues, UseFormRegister } from 'react-hook-form';
 import * as S from './Input.styles';
 
 type InputProps = {
   label: string;
   type: string;
-  name: string;
-  id: string;
-  required: boolean;
+  register: UseFormRegister<FieldValues>;
 };
 
-export const Input = ({ label, type, name, id, required }: InputProps) => {
+export const Input = ({ label, type, register }: InputProps) => {
   return (
     <S.ItenContainer>
       <S.LabelContainer>{label}</S.LabelContainer>
-      <S.InputContainer type={type} name={name} id={id} required={required} />
+      <S.InputContainer type={type} {...register(type)} />
     </S.ItenContainer>
   );
 };
