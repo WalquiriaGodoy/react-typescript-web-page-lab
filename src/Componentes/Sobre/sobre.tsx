@@ -25,7 +25,7 @@ class Sobre extends React.Component {
             mental.
           </p>
         </S.Text>
-        {/* TODO: Refatorar componente removendo props de texto e passando no children o componente com imagem já nomeada. */}
+
         <S.CoursesSection>
           <S.SectionTitle>Cursos Oferecidos</S.SectionTitle>
           <S.Courses>
@@ -33,12 +33,9 @@ class Sobre extends React.Component {
               {coursesListDuplicated.map((course) => {
                 return (
                   <CourseCard
-                    key={course.name}
+                    key={course.key}
                     name={course.name}
                     children={course.children}
-                    textAlign={course.textAlign}
-                    textTop={course.textTop}
-                    textRigth={course.textRigth}
                   />
                 );
               })}
