@@ -11,7 +11,7 @@ const SmallButton = styled(Button)({
 const LargeButton = styled(Button)({
   backgroundColor: '#B13737',
   borderRadius: '10px',
-  width: '500px',
+  width: '100%',
   height: '30px',
   marginTop: '20px',
 }) as typeof Button;

@@ -3,7 +3,7 @@ import FormDadosPessoais from './DadosPessoais/formDadosPessoais';
 import FormEndereco from './FormEndereco/formEndereco';
 import { FormButton } from '../../MaterialUI/Buttons/button';
 
-import * as SC from './styles';
+import * as S from './styles';
 
 type FormProps = {
   id?: number;
@@ -14,15 +14,15 @@ type FormProps = {
 
 const RegisterForm = ({ submitText, handleClick }: FormProps) => {
   return (
-    <SC.FormContainer>
+    <S.FormContainer>
       <form>
         <FormDadosPessoais />
         <FormEndereco />
-        <SC.ButtonContainer>
+        <S.ButtonContainer>
           <FormButton text='Finalizar Cadastro' handleClick={handleClick} />
-        </SC.ButtonContainer>
+        </S.ButtonContainer>
       </form>
-    </SC.FormContainer>
+    </S.FormContainer>
   );
 };
 

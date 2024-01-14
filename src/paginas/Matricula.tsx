@@ -8,7 +8,7 @@ function Matricula() {
     <section className='conteudo'>
       <Cabecalho />
       <ContentContainer>
-        <FormMatricula submitText='Fazer Matricula' />
+        <FormMatricula />
       </ContentContainer>
       <Rodape />
     </section>

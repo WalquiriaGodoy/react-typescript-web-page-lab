@@ -1,35 +1,13 @@
-import { FormButton } from '../../MaterialUI/Buttons/button';
-import { ThemeProvider } from '@mui/material/styles';
-import { labTheme } from '../../MaterialUI/Theme/colorTheme';
-import {
-  LabelContainer,
-  FormContainer,
-  InputContainer,
-  ButtonContainer,
-  ItenContainer,
-} from './styles';
+import { Input } from 'src/design-system/Input';
+import { FormContainer } from './styles';
+import { SubmitButton } from 'src/design-system/SubmitButton';
 
-type FormProps = {
-  submitText: string;
-};
-
-function FormMatricula({ submitText }: FormProps) {
+function FormMatricula() {
   return (
     <FormContainer>
-      <ItenContainer>
-        <LabelContainer>Nome</LabelContainer>
-        <InputContainer />
-      </ItenContainer>
-      <ItenContainer>
-        <LabelContainer>Telefone</LabelContainer>
-        <InputContainer />
-      </ItenContainer>
-
-      <ButtonContainer>
-        <ThemeProvider theme={labTheme}>
-          <FormButton text={submitText} />
-        </ThemeProvider>
-      </ButtonContainer>
+      <Input label='Nome' name='name' type='text' id='name' required />
+      <Input label='Email' name='email' type='email' id='email' required />
+      <SubmitButton text={'Fazer Matricula'} />
     </FormContainer>
   );
 }
