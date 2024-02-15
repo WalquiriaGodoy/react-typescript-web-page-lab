@@ -52,6 +52,7 @@ export const LeadForm = () => {
       <Input
         label='Whatsapp'
         type='telephone'
+        mask='(99) 99999-9999'
         register={register}
         message={errors.telephone?.message}
       />
