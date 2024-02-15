@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import InputMask from 'react-input-mask';
 
 export const ItenContainer = styled.div`
   margin: 5px;
@@ -12,6 +13,12 @@ export const LabelContainer = styled.label`
 `;
 
 export const InputContainer = styled.input`
+  border-radius: 5px;
+  height: 2rem;
+  padding: 0.2rem 0.4rem;
+`;
+
+export const InputContainerMask = styled(InputMask)`
   border-radius: 5px;
   height: 2rem;
   padding: 0.2rem 0.4rem;
