@@ -6,8 +6,8 @@ import { ChevronRight } from '../../assets/icons/ChevronRight';
 
 export const Carousel = (props: CarouselProps) => {
   const carouselRef = useRef<HTMLDivElement>(null);
-  const handleButtonClick = (direction: 'left' | 'rigth') => {
-    if (carouselRef.current && direction === 'rigth') {
+  const handleButtonClick = (direction: 'left' | 'right') => {
+    if (carouselRef.current && direction === 'right') {
       carouselRef.current.scrollLeft += 150;
     }
     if (carouselRef.current && direction === 'left') {
@@ -39,13 +39,21 @@ export const Carousel = (props: CarouselProps) => {
 
   return (
     <>
-      <S.CarouselButton onClick={() => handleButtonClick('left')}>
+      <S.CarouselButton
+        name='left'
+        role='carousel-button'
+        onClick={() => handleButtonClick('left')}
+      >
         <ChevronLeft />
       </S.CarouselButton>
       <S.Wrapper ref={carouselRef} role='carousel'>
         <S.Carousel>{props.children}</S.Carousel>
       </S.Wrapper>
-      <S.CarouselButton onClick={() => handleButtonClick('rigth')}>
+      <S.CarouselButton
+        name='right'
+        role='carousel-button'
+        onClick={() => handleButtonClick('right')}
+      >
         <ChevronRight />
       </S.CarouselButton>
     </>
