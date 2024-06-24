@@ -1,5 +1,5 @@
-import { ReactNode } from 'react';
-import * as S from './CourseCard.styles';
+import { ReactNode } from "react";
+import * as S from "./CourseCard.styles";
 
 type CourseCardProps = {
   name?: string;

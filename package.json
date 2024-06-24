@@ -17,7 +17,7 @@
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.11.39",
-    "@types/react": "^18.0.12",
+    "@types/react": "^18.3.2",
     "@types/react-dom": "^18.0.5",
     "@types/react-input-mask": "^3.0.5",
     "@types/styled-components": "^5.1.26",
