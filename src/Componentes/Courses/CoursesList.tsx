@@ -4,7 +4,7 @@ import { IntroducaoAoForroNamedImage } from '../images/CourseNamedImages/Introdu
 import { CaminhadasEGirosNamedImage } from '../images/CourseNamedImages/CaminhadasEGirosNamedImage';
 import { MusicalidadeEConexaoNamedImage } from '../images/CourseNamedImages/MusicalidadeEConexaoNamedImage';
 import { SacadasEPioesNamedImage } from '../images/CourseNamedImages/SacadasEPioesNamedImage';
-import { MolejoDoEstiloRootsNamedImage } from '../images/CourseNamedImages/MolejoDoEstiloRootsNamedImage';
+import { CorporalDoEstiloRootsNamedImage } from '../images/CourseNamedImages/CorporalDoEstiloRootsNamedImage';
 import { TecnicasEVariacoesNamedImage } from '../images/CourseNamedImages/TecnicasEVariacoesNamedImage';
 
 interface Course {
@@ -71,10 +71,10 @@ export const coursesList: Course[] = [
     key: 'Img7',
   },
   {
-    name: 'Molejo do Estilo Roots',
-    children: <MolejoDoEstiloRootsNamedImage />,
+    name: 'Corporal do Estilo Roots',
+    children: <CorporalDoEstiloRootsNamedImage />,
     description:
-      'O Curso de Molejo do Estilo Roots é direcionado para quem já domina a parte técnica e a organização corporal do Forró Roots. O curso foca em aprimorar a fluidez e o balanço dos movimentos, destacando o molejo característico desse estilo. \n Os alunos aprenderão a integrar esse estilo de movimento ao seu repertório, aprimorando a expressividade e a dinâmica da dança, e aprofundando a compreensão dos elementos do Forró Estilo Roots.',
+      'O Curso Corporal do Estilo Roots é direcionado para quem já domina a parte técnica e a organização corporal do Forró Roots. O curso foca em aprimorar a fluidez e o balanço dos movimentos, destacando o molejo característico desse estilo. \n Os alunos aprenderão a integrar esse estilo de movimento ao seu repertório, aprimorando a expressividade e a dinâmica da dança, e aprofundando a compreensão dos elementos do Forró Estilo Roots.',
     avaliable: true,
     key: 'Img8',
   },

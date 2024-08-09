@@ -13,11 +13,12 @@ export const CursoContainter = styled.div<CursoContainterProps>`
 `;
 
 export const ImageContainer = styled.div`
-  width: 400px;
-  height: 400px;
+  max-width: 450px;
+  max-height: 450px;
   flex: 1;
 
   img {
     width: 100%;
+    border-radius: 20px;
   }
 `;
