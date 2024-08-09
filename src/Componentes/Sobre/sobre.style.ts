@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const MainContentWrapper = styled.div`
   background: #fefefe;
-  margin: 3rem 16rem;
+  margin: 2rem 12rem;
 
   h1 {
     text-align: center;
@@ -20,17 +20,31 @@ export const MainContentWrapper = styled.div`
 
   p {
     text-align: justify;
-    margin: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
     font-size: 1.4rem;
     line-height: 2rem;
   }
 `;
 
-export const Text = styled.div`
+export const Content = styled.div`
   display: grid;
+  align-items: center;
   grid-template-columns: 1fr 2fr;
+`;
+
+export const Description = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
   font-family: 'Roboto';
-  font-size: 2rem;
+`;
+
+export const CulturalSection = styled.section`
+  display: grid;
+  align-items: center;
+  grid-template-columns: 2fr 1fr;
 `;
 
 export const SectionTitle = styled.h1`

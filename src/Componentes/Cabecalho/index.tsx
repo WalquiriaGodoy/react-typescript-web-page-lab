@@ -18,9 +18,6 @@ class Cabecalho extends React.Component {
             <li>
               <LinkButton texto='Cursos' path='/cursos' />
             </li>
-            <li>
-              <LinkButton texto='Cadastro' path='/cadastro' />
-            </li>
           </ul>
         </S.HeaderWrapper>
         <S.BannerWrapper>
