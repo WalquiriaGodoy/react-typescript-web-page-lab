@@ -6,6 +6,7 @@ export const ListaDeCursosContainer = styled.div`
   align-items: center;
   background: #fefefe;
   margin: 2rem 12rem;
+  gap: 4rem;
 
   p {
     text-align: justify;
@@ -19,15 +20,12 @@ export const ListaDeCursosContainer = styled.div`
 `;
 
 export const DescriptionStyle = styled.div`
-  font-size: 1.4rem;
-  line-height: 2rem;
-  text-align: justify;
+  font-family: 'Roboto';
   flex: 1;
 
   h1 {
     text-align: center;
-    font-size: 2.5em;
-    font-family: 'Roboto';
+    font-size: 2.5rem;
     text-shadow: 1px 1px 0px #fff, 3px 3px 0px rgba(0, 0, 0, 0.15);
   }
 `;
