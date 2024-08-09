@@ -1,11 +1,11 @@
-import { GirosTradicionaisNamedImage } from '../../assets/namedImages/GirosTradicionaisNamedImage';
-import { GirosDeCincoPisadasNamedImage } from '../../assets/namedImages/GirosDeCincoPisadasNamedImage';
-import { IntroducaoAoForroNamedImage } from '../../assets/namedImages/IntroduçãoAoForroNamedImage';
-import { CaminhadasEGirosNamedImage } from '../../assets/namedImages/CaminhadasEGirosNamedImage';
-import { MusicalidadeEConexaoNamedImage } from '../../assets/namedImages/MusicalidadeEConexaoNamedImage';
-import { SacadasEPioesNamedImage } from '../../assets/namedImages/SacadasEPioesNamedImage';
-import { MolejoDoEstiloRootsNamedImage } from '../../assets/namedImages/MolejoDoEstiloRootsNamedImage';
-import { TecnicasEVariacoesNamedImage } from '../../assets/namedImages/TecnicasEVariacoesNamedImage';
+import { GirosTradicionaisNamedImage } from '../images/CourseNamedImages/GirosTradicionaisNamedImage';
+import { GirosDeCincoPisadasNamedImage } from '../images/CourseNamedImages/GirosDeCincoPisadasNamedImage';
+import { IntroducaoAoForroNamedImage } from '../images/CourseNamedImages/IntroduçãoAoForroNamedImage';
+import { CaminhadasEGirosNamedImage } from '../images/CourseNamedImages/CaminhadasEGirosNamedImage';
+import { MusicalidadeEConexaoNamedImage } from '../images/CourseNamedImages/MusicalidadeEConexaoNamedImage';
+import { SacadasEPioesNamedImage } from '../images/CourseNamedImages/SacadasEPioesNamedImage';
+import { MolejoDoEstiloRootsNamedImage } from '../images/CourseNamedImages/MolejoDoEstiloRootsNamedImage';
+import { TecnicasEVariacoesNamedImage } from '../images/CourseNamedImages/TecnicasEVariacoesNamedImage';
 
 interface Course {
   name: string;
