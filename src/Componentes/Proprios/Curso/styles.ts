@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 interface CursoContainterProps {
   reverse: boolean;
@@ -6,11 +6,10 @@ interface CursoContainterProps {
 
 export const CursoContainter = styled.div<CursoContainterProps>`
   display: flex;
-  flex-direction: ${({ reverse }) => (reverse ? "row-reverse" : "row")};
+  flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
   justify-content: space-between;
   align-items: center;
-  margin-top: 2rem;
-  padding: 0 5rem;
+  margin-top: 5rem;
 `;
 
 export const ImageContainer = styled.div`

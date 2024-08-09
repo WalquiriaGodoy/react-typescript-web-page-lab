@@ -7,7 +7,13 @@ export const LeadInviteContainer = styled.div`
   justify-self: center;
 `;
 
-export const InviteTitle = styled.h1``;
+export const InviteTitle = styled.h1`
+  padding: 4rem;
+  text-align: center;
+  font-size: 2.5em;
+  font-family: 'Roboto';
+  text-shadow: 1px 1px 0px #fff, 3px 3px 0px rgba(0, 0, 0, 0.15);
+`;
 
 export const InviteText = styled.p`
   text-align: justify;

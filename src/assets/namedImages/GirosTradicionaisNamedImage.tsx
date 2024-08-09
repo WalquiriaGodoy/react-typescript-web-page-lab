@@ -1,10 +1,7 @@
-import CursoGirosTradicionais from './../img/namedImg/CursoGirosTradicionais.png';
+import GirosTradicionais from './../img/namedImg/GirosTradicionais.png';
 
 export const GirosTradicionaisNamedImage = () => {
   return (
-    <img
-      src={CursoGirosTradicionais}
-      alt='Grupo de alunos unidos e felizes'
-    ></img>
+    <img src={GirosTradicionais} alt='Grupo de alunos unidos e felizes'></img>
   );
 };

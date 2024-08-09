@@ -1,7 +1,7 @@
 import React from 'react';
-import Cabecalho from '../Componentes/Cabecalho';
-import Rodape from '../Componentes/Rodape';
-import { ListaDeCursos } from './../Componentes/ListaDeCursos';
+import Cabecalho from '../../Componentes/Cabecalho';
+import Rodape from '../../Componentes/Rodape';
+import { ListaDeCursos } from '../../Componentes/ListaDeCursos';
 
 class Cursos extends React.Component {
   render() {

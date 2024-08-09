@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 
 type TilteProps = {
   $textAlign?: string;
@@ -26,13 +26,13 @@ export const CardWrapper = styled.div`
 `;
 
 export const Image = styled.div`
-  width: 400px;
+  width: 450px;
   border-radius: 10px;
 `;
 
 export const Title = styled.div<TilteProps>`
   ${({ $textAlign, $top, $rigth }) => css`
-    font-family: "IrishGrover";
+    font-family: 'IrishGrover';
     position: absolute;
     font-size: 40px;
     font-weight: 600;

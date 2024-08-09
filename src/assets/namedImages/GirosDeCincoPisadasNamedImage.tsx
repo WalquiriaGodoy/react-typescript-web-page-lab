@@ -1,10 +1,7 @@
-import GirosDeCincoPisadasNamed from '../img/namedImg/GirosDeCincoPisadasNamed.png';
+import GirosDeCincoPisadas from '../img/namedImg/GirosDeCincoPisadas.png';
 
 export const GirosDeCincoPisadasNamedImage = () => {
   return (
-    <img
-      src={GirosDeCincoPisadasNamed}
-      alt='Grupo de alunos unidos e felizes'
-    ></img>
+    <img src={GirosDeCincoPisadas} alt='Grupo de alunos unidos e felizes'></img>
   );
 };
