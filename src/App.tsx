@@ -2,7 +2,7 @@ import React from 'react';
 import './styles/Fonts';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './paginas/Home/Home';
-import Cursos from './paginas/Cursos';
+import Cursos from './paginas/Cursos/Cursos';
 import 'normalize.css';
 import Cadastro from './paginas/Cadastro';
 class App extends React.Component {

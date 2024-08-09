@@ -3,7 +3,7 @@ import { LinkButton } from '../MaterialUI/Buttons/button';
 import * as S from './header.style';
 
 import './cabecalho.scss';
-import { BannerLab } from '../../assets/images/BannerLab';
+import { BannerLab } from '../images/BannerLab';
 
 class Cabecalho extends React.Component {
   render() {

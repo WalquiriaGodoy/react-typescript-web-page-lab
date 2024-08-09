@@ -1,131 +1,83 @@
-import { GirosTradicionaisNamedImage } from "../../assets/namedImages/GirosTradicionaisNamedImage";
-import { GirosDeCincoPisadasNamedImage } from "../../assets/namedImages/GirosDeCincoPisadasNamedImage";
-import { IntroducaoAoForroNamedImage } from "../../assets/namedImages/IntroduçãoAoForroNamedImage";
-import { CaminhadasDoRootsNamedImage } from "../../assets/namedImages/CaminhadasDoRootsNamedImage";
-import { GirosDoRootsNamedImage } from "../../assets/namedImages/GirosDoRootsNamedImage";
-import { PushAndPullESacadasNamedImage } from "../../assets/namedImages/PushAndPullESacadasNamedImage";
-import { ArrastadasETrocadilhosNamedImage } from "../../assets/namedImages/ArrastadasETrocadilhosNamedImage";
+import { GirosTradicionaisNamedImage } from '../images/CourseNamedImages/GirosTradicionaisNamedImage';
+import { GirosDeCincoPisadasNamedImage } from '../images/CourseNamedImages/GirosDeCincoPisadasNamedImage';
+import { IntroducaoAoForroNamedImage } from '../images/CourseNamedImages/IntroduçãoAoForroNamedImage';
+import { CaminhadasEGirosNamedImage } from '../images/CourseNamedImages/CaminhadasEGirosNamedImage';
+import { MusicalidadeEConexaoNamedImage } from '../images/CourseNamedImages/MusicalidadeEConexaoNamedImage';
+import { SacadasEPioesNamedImage } from '../images/CourseNamedImages/SacadasEPioesNamedImage';
+import { MolejoDoEstiloRootsNamedImage } from '../images/CourseNamedImages/MolejoDoEstiloRootsNamedImage';
+import { TecnicasEVariacoesNamedImage } from '../images/CourseNamedImages/TecnicasEVariacoesNamedImage';
 
 interface Course {
   name: string;
   children: React.ReactNode;
   description: string;
+  avaliable: boolean;
+  key: string;
 }
 
 export const coursesList: Course[] = [
   {
-    name: "Introdução ao Forró",
+    name: 'Introdução ao Forró',
     children: <IntroducaoAoForroNamedImage />,
-    description:
-      "O Curso de Introdução ao Forró é destinado à pessoas não dançam Forró e gostariam de aprender a dançar. Ele também pode ser indicado a pessoas que já tem algum conhecimento da dança mas querem aprender com maior qualidade e seguir a metodologia completa garantindo um aprendizado mais sólido.",
+    description: `O Curso de Introdução ao Forró é ideal para quem nunca dançou e quer aprender desde o começo. Ele oferece uma base sólida, ajudando os iniciantes a desenvolverem suas habilidades de forma gradual e confiante. \n Para quem já tem alguma experiência, o curso também é uma excelente escolha. Ele permite que os alunos aprimorem sua técnica e sigam uma metodologia completa, garantindo um aprendizado mais estruturado e de qualidade.`,
+    avaliable: false,
+    key: 'Img1',
   },
   {
-    name: "Giros Tradicionais",
+    name: 'Giros Tradicionais',
     children: <GirosTradicionaisNamedImage />,
-    description:
-      "O Curso de Giros Tradicionais é destinado a pessoas que já dançam Forró e querem desenvolver os giros mais usados no Forró Universitário. Ele é indicado também aos alunos que já concluiram o curso de Introdução ao Forró",
+    description: `O Curso de Giros Tradicionais é perfeito para quem já tem experiência no Forró e deseja melhorar os giros mais usados no Forró Universitário. O curso foca nos giros mais tradicionais dessa dança, garantindo que os alunos ganhem confiança e fluidez nos movimentos. \n Além disso, é uma ótima opção para aqueles que já concluíram o Curso de Introdução ao Forró ou que já dominam os passos básicos, oferecendo um próximo passo natural para quem quer continuar evoluindo na dança.`,
+    avaliable: false,
+    key: 'Img2',
   },
   {
-    name: "Giros de Cinco Pisadas",
+    name: 'Musicalidade e Conexão',
+    children: <MusicalidadeEConexaoNamedImage />,
+    description:
+      'O Curso de Musicalidade e Conexão é ideal para quem já domina o Forró Universitário e os Giros Tradicionais, buscando maior fluidez na dança. O curso aprofunda a conexão com o par e com a música, tornando os movimentos mais naturais e sincronizados. \n Os alunos estudam temas como frases musicais, compasso, ritmo e cadência musical, aprendendo a adaptar e variar os passos conforme o ritmo e a melodia. Isso enriquece a dança, trazendo maior expressividade e sensibilidade musical.',
+    avaliable: true,
+    key: 'Img3',
+  },
+  {
+    name: 'Giros de Cinco Pisadas',
     children: <GirosDeCincoPisadasNamedImage />,
     description:
-      "O Curso de Repertório de 5 pisadas é destinado a pessoas que já dançam Forró Universitário e desejam adquirir um repertório diferenciado em termos de marcação das pisadas e dinâmica dos movimentos.",
+      'O Curso de Repertório de 5 Pisadas é voltado para quem já dança Forró Universitário e quer diversificar seu repertório. O curso foca em técnicas diferenciadas de marcação das pisadas e na dinâmica dos movimentos, oferecendo novos padrões para enriquecer a dança. \n Os alunos aprenderão a aplicar essas cinco pisadas de forma criativa, ampliando suas opções e trazendo mais variedade e sofisticação para sua performance no Forró.',
+    avaliable: false,
+    key: 'Img4',
   },
   {
-    name: "Caminhadas do Roots",
-    children: <CaminhadasDoRootsNamedImage />,
+    name: 'Caminhadas e Giros do Roots',
+    children: <CaminhadasEGirosNamedImage />,
     description:
-      "O Curso de Desenvoltura no Forró Universitário é destinado a pessoas que já dançam o Forró Universitário, sabem fazer os Giros Tradicionais e querem adquirir maior autonomia, sequenciação e variações dos movimetos tradicionais.",
+      'O Curso de Caminhadas e Giros do Roots é para quem já dança Forró Universitário e quer mergulhar no Forró Estilo Roots. O curso explora a origem desse estilo e ensina movimentos tradicionais como caminhadas, travas e o giro paulista, além de suas variações. \n Este estilo vem crescendo em popularidade entre os forrozeiros do Sudeste e ganhando espaço no meio. Os alunos terão a oportunidade de aprender e praticar essas técnicas, trazendo um novo nível de autenticidade e tradição à sua dança.',
+    avaliable: true,
+    key: 'Img5',
   },
   {
-    name: "Giros do Roots",
-    children: <GirosDoRootsNamedImage />,
+    name: 'Sacadas e Piões do Roots',
+    children: <SacadasEPioesNamedImage />,
     description:
-      "O Curso de Aperfeiçoamento do Forró Estilio Roots é destinado aos alunos que já passaram pelos cursos de Técnicas e Variações e Desenvoltura no Forró Estilo Roots. Ele propõe um aperfeiçoamento das técnicas de execução e comunicação proporcionando maior autonomia, capacidade de sequenciação e variação de movimentos.",
+      'O Curso de Sacadas e Piões é para quem já conhece o básico do Forró Estilo Roots, incluindo suas principais Caminhadas e Giros. O curso foca no desenvolvimento de movimentos de sacadas e piões, que são bastante presentes nesse estilo, abordando variações e diferentes finalizações desses movimentos. \n Nesse sentido, o curso ajudará a incorporar essas características fundamentais do estilo, reforçando a essência do Forró Roots na sua dança.',
+    avaliable: true,
+    key: 'Img6',
   },
   {
-    name: "Push & Pull e Sacadas",
-    children: <PushAndPullESacadasNamedImage />,
+    name: 'Técnicas e Variações',
+    children: <TecnicasEVariacoesNamedImage />,
     description:
-      "O Curso de Musicalidade e Conexão é destinado a pessoas que já dançam o Forró Universitário, sabem fazer os Giros Tradicionais e querem adquirir maior fluidez na dança, conexão com o par e aprender movimentos que podem ser usados e variados de acordo com o rítmo e melodia musical.",
+      'O Curso de Técnicas e Variações do Forró Estilo Roots é para quem já domina o básico do estilo, incluindo caminhadas, giros, sacadas e piões. Este curso é ideal para aqueles que querem aprofundar seu conhecimento e habilidades, explorando técnicas avançadas e variações dentro do Forró Roots. \n Com o crescimento do estilo entre os dançarinos, o curso oferece a oportunidade de aprender e aplicar novas técnicas, trazendo mais variedade e complexidade à dança. Os alunos poderão integrar essas variações ao seu repertório, aprimorando sua capacidade de executar movimentos com maior precisão e criatividade, e consolidando os conceitos fundamentais do Forró Estilo Roots.',
+    avaliable: true,
+    key: 'Img7',
   },
   {
-    name: "Arrastadas e Trocadilhos",
-    children: <ArrastadasETrocadilhosNamedImage />,
+    name: 'Molejo do Estilo Roots',
+    children: <MolejoDoEstiloRootsNamedImage />,
     description:
-      "O Curso de Autonomia do Forró Estilio Roots é destinado aos alunos que já passaram pelos cursos de Técnicas e Variações e Desenvoltura, e Aperfeiçoamento no Forró Estilo Roots. Ele propõe um formato de estudo de movimentos complexos associados as técnicas de execução e comunicação desenvolvendo no aluno a capacidade de tirar e organizar diversos movimentos do Estilo.",
+      'O Curso de Molejo do Estilo Roots é direcionado para quem já domina a parte técnica e a organização corporal do Forró Roots. O curso foca em aprimorar a fluidez e o balanço dos movimentos, destacando o molejo característico desse estilo. \n Os alunos aprenderão a integrar esse estilo de movimento ao seu repertório, aprimorando a expressividade e a dinâmica da dança, e aprofundando a compreensão dos elementos do Forró Estilo Roots.',
+    avaliable: true,
+    key: 'Img8',
   },
 ];
 
-export const coursesListDuplicated = [
-  {
-    name: "Introdução ao Forró",
-    children: <IntroducaoAoForroNamedImage />,
-    key: "Img1",
-  },
-  {
-    name: "Giros Tradicionais",
-    children: <GirosTradicionaisNamedImage />,
-    key: "Img2",
-  },
-  {
-    name: "Giros de Cinco Pisadas",
-    children: <GirosDeCincoPisadasNamedImage />,
-    key: "Img3",
-  },
-  {
-    name: "Caminhadas do Roots",
-    children: <CaminhadasDoRootsNamedImage />,
-    key: "Img4",
-  },
-  {
-    name: "Giros do Roots",
-    children: <GirosDoRootsNamedImage />,
-    key: "Img5",
-  },
-  {
-    name: "Push & Pull e Sacadas",
-    children: <PushAndPullESacadasNamedImage />,
-    key: "Img6",
-  },
-  {
-    name: "Arrastadas e Trocadilhos",
-    children: <ArrastadasETrocadilhosNamedImage />,
-    key: "Img7",
-  },
-  {
-    name: "Introdução ao Forró",
-    children: <IntroducaoAoForroNamedImage />,
-    key: "Img8",
-  },
-  {
-    name: "Giros Tradicionais",
-    children: <GirosTradicionaisNamedImage />,
-    key: "Img9",
-  },
-  {
-    name: "Giros de Cinco Pisadas",
-    children: <GirosDeCincoPisadasNamedImage />,
-    key: "Img10",
-  },
-  {
-    name: "Caminhadas do Roots",
-    children: <CaminhadasDoRootsNamedImage />,
-    key: "Img11",
-  },
-  {
-    name: "Giros do Roots",
-    children: <GirosDoRootsNamedImage />,
-    key: "Img12",
-  },
-  {
-    name: "Push & Pull e Sacadas",
-    children: <PushAndPullESacadasNamedImage />,
-    key: "Img13",
-  },
-  {
-    name: "Arrastadas e Trocadilhos",
-    children: <ArrastadasETrocadilhosNamedImage />,
-    key: "Img14",
-  },
-];
+export const coursesListDuplicated = [...coursesList, ...coursesList];

@@ -4,14 +4,6 @@ export const MainContentWrapper = styled.div`
   background: #fefefe;
   margin: 2rem 12rem;
 
-  h1 {
-    text-align: center;
-    font-size: 2.5em;
-    font-family: 'Roboto';
-    margin: 0;
-    clear: left;
-  }
-
   img {
     width: 100%;
     height: 100%;
@@ -20,8 +12,8 @@ export const MainContentWrapper = styled.div`
 
   p {
     text-align: justify;
-    margin-left: 2em;
-    margin-right: 2em;
+    margin-left: 2rem;
+    margin-right: 2rem;
     margin-bottom: 1rem;
     margin-top: 1rem;
     font-size: 1.4rem;
@@ -49,6 +41,10 @@ export const CulturalSection = styled.section`
 
 export const SectionTitle = styled.h1`
   padding: 4rem;
+  text-align: center;
+  font-size: 2.5em;
+  font-family: 'Roboto';
+  text-shadow: 1px 1px 0px #fff, 3px 3px 0px rgba(0, 0, 0, 0.15);
 `;
 
 export const CoursesSection = styled.section``;
