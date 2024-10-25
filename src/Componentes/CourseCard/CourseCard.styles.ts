@@ -26,7 +26,7 @@ export const CardWrapper = styled.div`
 `;
 
 export const Image = styled.div`
-  width: 450px;
+  width: 400px;
   border-radius: 10px;
 `;
 
