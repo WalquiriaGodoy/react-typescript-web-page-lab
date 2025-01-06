@@ -1,12 +1,13 @@
 import * as S from './styles';
-
 import { Curso } from '../Proprios/Curso';
-
 import { coursesList } from '../Courses/CoursesList';
+import { useDevice } from 'src/hooks/useDevice';
 
 export const ListaDeCursos = () => {
+  const { deviceType } = useDevice();
+
   return (
-    <S.ListaDeCursosContainer>
+    <S.ListaDeCursosContainer $deviceType={deviceType}>
       {coursesList.map((Course, index) => {
         const available = Course.avaliable;
         if (!available) return null;
