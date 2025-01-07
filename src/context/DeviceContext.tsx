@@ -28,6 +28,7 @@ export const DeviceProvider = ({ children }: { children: React.ReactNode }) => {
   };
 
   useEffect(() => {
+    handleResize();
     window.addEventListener('resize', handleResize);
 
     return () => {

@@ -21,7 +21,7 @@ export const ListaDeCursosContainer = styled.div<{ $deviceType: DeviceType }>`
     align-items: center;
     background: #fefefe;
     padding: ${responsivePadding($deviceType)};
-    gap: 4rem;
+    gap: 2rem;
 
     p {
       text-align: justify;
