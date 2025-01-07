@@ -1,5 +1,6 @@
 import React from 'react';
 import * as S from './styles';
+import { useDevice } from 'src/hooks/useDevice';
 
 interface CursoProps {
   name: string;
@@ -25,12 +26,15 @@ export const Curso: React.FC<CursoProps> = ({
   reverse,
 }) => {
   const paragrafos = description.split('\n');
+  const isDesktop = useDevice().deviceType === 'desktop';
 
   return (
-    <S.CursoContainter key={name} reverse={reverse}>
-      <S.ImageContainer>{children}</S.ImageContainer>
+    <S.CursoContainter key={name} reverse={reverse} $isDesktop={isDesktop}>
+      {isDesktop && <S.ImageContainer>{children}</S.ImageContainer>}
       <S.DescriptionStyle>
         <h1>{name}</h1>
+        {!isDesktop && <S.ImageContainer>{children}</S.ImageContainer>}
+
         {paragrafos.map((paragrafo, index) => (
           <p key={index}>{paragrafo}</p>
         ))}

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 interface CursoContainterProps {
   reverse: boolean;
+  $isDesktop: boolean;
 }
 
 export const CursoContainter = styled.div<CursoContainterProps>`
@@ -9,13 +10,15 @@ export const CursoContainter = styled.div<CursoContainterProps>`
   flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
   justify-content: space-between;
   align-items: center;
-  margin-top: 5rem;
+  margin-top: ${({ $isDesktop }) => ($isDesktop ? '5rem' : '0')};
   margin-left: 2em;
   margin-right: 2em;
   gap: 4rem;
 `;
 
 export const ImageContainer = styled.div`
+  justify-self: center;
+  padding: 2rem;
   max-width: 450px;
   max-height: 450px;
   flex: 1;
