@@ -1,30 +1,66 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-export const MainContentWrapper = styled.div`
-  background: #fefefe;
-  margin: 2rem 12rem;
+interface ContentProps {
+  $isDesktop: boolean;
+}
 
-  img {
-    width: 100%;
-    height: 100%;
-    float: left;
-  }
+interface MainContentWrapperProps {
+  $isDesktop: boolean;
+  $isTablet: boolean;
+}
 
-  p {
-    text-align: justify;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    font-size: 1.4rem;
-    line-height: 2rem;
-  }
+interface CulturalSectionProps {
+  $isDesktop: boolean;
+}
+
+interface CulturalSectiuImageProps {
+  $isDesktop: boolean;
+}
+
+interface LeadSectionProps {
+  $isDesktop: boolean;
+}
+
+interface SectionTitleProps {
+  $isDesktop: boolean;
+}
+
+export const MainContentWrapper = styled.div<MainContentWrapperProps>`
+  ${({ $isDesktop, $isTablet }) => {
+    console.log({ $isDesktop });
+    return css`
+      background: #fefefe;
+      margin: ${$isDesktop || $isTablet ? '2rem 12rem' : 'unset'};
+
+      img {
+        width: 100%;
+        height: 100%;
+        float: left;
+      }
+
+      p {
+        text-align: justify;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        font-size: 1.4rem;
+        line-height: 2rem;
+      }
+    `;
+  }}
 `;
 
-export const Content = styled.div`
+export const Content = styled.div<ContentProps>`
   display: grid;
   align-items: center;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: ${({ $isDesktop }) =>
+    $isDesktop ? '1fr 2fr' : '1fr'};
+`;
+
+export const ImageContainer = styled.div`
+  width: '600px';
+  height: '460px';
 `;
 
 export const Description = styled.div`
@@ -33,14 +69,21 @@ export const Description = styled.div`
   font-family: 'Roboto';
 `;
 
-export const CulturalSection = styled.section`
+export const CulturalSection = styled.section<CulturalSectionProps>`
   display: grid;
   align-items: center;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: ${({ $isDesktop }) =>
+    $isDesktop ? '1.2fr 1fr' : '1fr'};
 `;
 
-export const SectionTitle = styled.h1`
-  padding: 4rem;
+export const CulturalSectionImage = styled.div<CulturalSectiuImageProps>`
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+`;
+
+export const SectionTitle = styled.h1<SectionTitleProps>`
+  padding: ${({ $isDesktop }) => ($isDesktop ? '4rem' : '1rem')};
   text-align: center;
   font-size: 2.5em;
   font-family: 'Roboto';
@@ -55,9 +98,10 @@ export const Courses = styled.div`
   justify-content: center;
 `;
 
-export const LeadSection = styled.section`
+export const LeadSection = styled.section<LeadSectionProps>`
   display: grid;
-  grid-template-columns: 6fr 4fr;
+  grid-template-columns: ${({ $isDesktop }) =>
+    $isDesktop ? `6fr 4fr` : `1fr`};
   align-items: center;
-  padding: 5rem;
+  padding: ${({ $isDesktop }) => ($isDesktop ? '5rem' : '0')};
 `;
