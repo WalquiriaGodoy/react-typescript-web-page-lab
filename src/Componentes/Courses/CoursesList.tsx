@@ -102,5 +102,3 @@ export const coursesList: Course[] = [
     endTime: '22:30h',
   },
 ];
-
-export const coursesListDuplicated = [...coursesList, ...coursesList];
