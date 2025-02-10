@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.div<{ $isMobile: boolean }>`
   width: 100%;
-  height: 400px;
+  height: ${(props) => (props.$isMobile ? '250px' : '400px')};
   padding: 30px;
   overflow-x: scroll;
   overflow-y: hidden;

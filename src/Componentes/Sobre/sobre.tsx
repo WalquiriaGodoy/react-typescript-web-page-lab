@@ -10,7 +10,7 @@ import { LeadForm } from '../Formulário/LeadForm/LeadForm';
 import { useDevice } from 'src/hooks/useDevice';
 
 const Sobre = () => {
-  const { isDesktop, isTablet } = useDevice();
+  const { isDesktop, isTablet, isMobile } = useDevice();
 
   return (
     <S.MainContentWrapper $isDesktop={isDesktop} $isTablet={isTablet}>
@@ -91,7 +91,7 @@ const Sobre = () => {
           Cursos Oferecidos
         </S.SectionTitle>
         <S.Courses>
-          <Carousel>
+          <Carousel isMobile={isMobile}>
             {coursesList.map((course) => {
               return (
                 <CourseCard

@@ -1,5 +1,6 @@
-import { ReactNode } from "react";
-import * as S from "./CourseCard.styles";
+import { ReactNode } from 'react';
+import * as S from './CourseCard.styles';
+import { useDevice } from 'src/hooks/useDevice';
 
 type CourseCardProps = {
   name?: string;
@@ -10,9 +11,11 @@ type CourseCardProps = {
 };
 
 export const CourseCard = (props: CourseCardProps) => {
+  const { isMobile } = useDevice();
+
   return (
     <S.CardWrapper>
-      <S.Image>{props.children}</S.Image>
+      <S.Image $isMobile={isMobile}>{props.children}</S.Image>
     </S.CardWrapper>
   );
 };

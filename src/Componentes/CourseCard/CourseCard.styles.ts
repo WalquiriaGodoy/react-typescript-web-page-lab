@@ -25,8 +25,8 @@ export const CardWrapper = styled.div`
   }
 `;
 
-export const Image = styled.div`
-  width: 400px;
+export const Image = styled.div<{ $isMobile: boolean }>`
+  width: ${(props) => (props.$isMobile ? '250px' : '400px')};
   border-radius: 10px;
 `;
 

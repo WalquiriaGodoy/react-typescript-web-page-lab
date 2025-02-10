@@ -46,7 +46,7 @@ export const Carousel = (props: CarouselProps) => {
       >
         <ChevronLeft />
       </S.CarouselButton>
-      <S.Wrapper ref={carouselRef} role='carousel'>
+      <S.Wrapper $isMobile={props.isMobile} ref={carouselRef} role='carousel'>
         <S.Carousel>{props.children}</S.Carousel>
       </S.Wrapper>
       <S.CarouselButton
