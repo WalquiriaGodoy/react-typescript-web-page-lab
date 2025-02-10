@@ -5,7 +5,7 @@ import '@testing-library/jest-dom/extend-expect';
 describe('Carousel', () => {
   it('should render component', () => {
     render(
-      <Carousel>
+      <Carousel isMobile={false}>
         <></>
       </Carousel>
     );
@@ -14,7 +14,7 @@ describe('Carousel', () => {
   });
   it('should render carousel butons', () => {
     render(
-      <Carousel>
+      <Carousel isMobile={false}>
         <></>
       </Carousel>
     );
@@ -24,7 +24,7 @@ describe('Carousel', () => {
 
   it('should scroll right when button right is clicked', () => {
     render(
-      <Carousel>
+      <Carousel isMobile={false}>
         <div>Item 1</div>
         <div>Item 2</div>
         <div>Item 3</div>
@@ -42,7 +42,7 @@ describe('Carousel', () => {
   });
   it('should scroll left when button left is clicked', () => {
     render(
-      <Carousel>
+      <Carousel isMobile={false}>
         <div>Item 1</div>
         <div>Item 2</div>
         <div>Item 3</div>
